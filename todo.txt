@@ -1,0 +1,23 @@
+2012-05-25
+数据库设计
+tableName:malacca_appInfo
+id
+appName
+categoryId
+iconName
+iconUrl
+picName
+picUrl
+orderId
+date
+bz:1 - 显示 0 - 隐藏
+tableName:malacca_appCategory
+id
+categoryName
+date
+appName:The Singing Alphabet
+categoryName:教育
+http://itunes.apple.com/us/album/singing-alphabet-abc-song/id198469236?i=198469848&ign-mpt=uo%3D4#
+http://itunes.apple.com/us/album/fun-learning-songs/id198469236
+itms://itunes.apple.com/us/album/fun-leaning-songs/id198469236
+http://itunes.apple.com/us/app/singing-alphabet-iphone-version/id525002875?mt=8
