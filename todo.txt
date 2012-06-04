@@ -21,3 +21,7 @@ http://itunes.apple.com/us/album/singing-alphabet-abc-song/id198469236?i=1984698
 http://itunes.apple.com/us/album/fun-learning-songs/id198469236
 itms://itunes.apple.com/us/album/fun-leaning-songs/id198469236
 http://itunes.apple.com/us/app/singing-alphabet-iphone-version/id525002875?mt=8
+2012-06-03
+增加管理平台
+图片保存为base64
+图片尺寸:320*480 480*800
