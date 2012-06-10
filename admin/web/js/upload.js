@@ -1,6 +1,6 @@
 (function() {
 	var Malacca = {};
-	var Malacca.upload = {};
+	Malacca.upload = {};
 	
 	// dom collection
 	var _DROP_AREA = null;
@@ -42,9 +42,10 @@
 		for(var i = 0, l = files.length ; i < l ; i++) {
 			html = '<tr>';
 			html += '<td>';
-			html += '<strong class="break_all">' + files[i].fileName + '</strong>';
+			html += '<strong class="break_all">' + files[i].name + '</strong>';
 			html += '</td>';
 			html += '<td>' + Math.ceil(files[i].size/1024) + ' KB</td>';
+			html += '<td class="preview_area"></td>';
 			html += '<td><textarea class="result_area" onfocus="this.select()"></textarea></td>';
 			html += '</tr>';
 			_html.push(html);
@@ -74,7 +75,7 @@
 		};
 		
 		reader.onloadstart = function(/*@type {ProgressEvent}*/e) {
-			_data_previewareas[index].innerHTMl = '<span class="loading"></span>';
+			_data_previewareas[index].innerHTML = '<span class="loading"></span>';
 		};
 		
 		reader.onload = function(/*@type {ProgressEvent}*/e) {
@@ -86,7 +87,7 @@
 		reader.readAsDataURL(file);
 	};
 	
-	Malacca.previewFile = function(/*@type {string}*/ result, /*@type {int}*/ index) {
+	Malacca.upload.previewFile = function(/*@type {string}*/ result, /*@type {int}*/ index) {
 		var _type = result.substr(5, result.indexOf(";") - 5);
 		var _html = "Can't Preview this file";
 		var _haveSrc = false;
@@ -107,7 +108,7 @@
 		
 		_data_previewareas[index].innerHTML = _html;
 		if(_haveSrc) {
-			_data_previewarea[index].children[0].src = result;
+			_data_previewareas[index].children[0].src = result;
 		}
 	};
 	
