@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>camera</title>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<div>
+			<video id="monitor" autoplay />
+		</div>
+		<div>
+			<canvas id="photo" width="640" height="480" style="display:none" />
+		</div>
+		<div>
+			<input id="camera" type="button" value="camera" onclick="do_camera()" />
+		</div>
+		<script type="text/javascript">
+			var video = document.getElementById("monitor");
+			var canvas = document.getElementById("photo");
+			navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia;
+			if(navigator.getUserMedia) {
+				if(navigator.webkitURL) {
+					navigator.getUserMedia("video", function(stream) {
+						video.src = window.webkitURL.createObjectURL(stream);
+					}, function(error) {
+						alert(error);
+					});
+				} else {
+					navigator.getUserMedia("video", function(stream) {
+						video.src = window.webkitURL.createObjectURL(stream);
+					}, function(error) {
+						alert(error);
+					});
+				}
+			} else {
+				alert("navigator.getUserMedia Error");
+			}
+			/*setInterval(function() {
+				video.style.position = "relative";
+				if(video.style.left == "10px") {
+					video.style.left = "0px";
+					video.style.top = "0px";
+				} else {
+					video.style.left = "10px";
+					video.style.top = "10px";
+				}
+			}, 100);*/
+			function do_camera() {
+				var ctx = canvas.getContext("2d");
+				canvas.width = video.videoWidth;
+				canvas.height = video.videoHeight;
+				ctx.drawImage(video, 0, 0, 640, 480);
+				
+				var imgData = canvas.toDataURL();
+				console.log(imgData);
+			}
+		</script>
+	</body>
+</html>
