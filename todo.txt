@@ -25,3 +25,5 @@ http://itunes.apple.com/us/app/singing-alphabet-iphone-version/id525002875?mt=8
 增加管理平台
 图片保存为base64
 图片尺寸:320*480 480*800
+2012-07-01
+元素 http://alteredqualia.com/canvasmol/
