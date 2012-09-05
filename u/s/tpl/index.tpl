@@ -18,6 +18,12 @@
 				</a>
 				<span>心情</span>
 			</div>
+			<div class="item photo column">
+				<a href="detail.php?appId=2">
+					<img src="../s/i/mza_1869869334935025107.320x480-75.jpg"></img>
+				</a>
+				<span>iReader</span>
+			</div>
 		</div>
 		<script type="text/javascript" src="../s/js/malacca.js"></script>
 	</body>
