@@ -8,9 +8,9 @@ $(function() {
 
 $(document).ready(function(){
 	$("#container > div.item > span").each(function() {
-		$(this).hide();
+		$(this).show();
 	});
 	$("#container > div.item").bind("mouseenter mouseleave", function() {
-		$("span", this).slideToggle();
+		//$("span", this).slideToggle();
 	})
 });

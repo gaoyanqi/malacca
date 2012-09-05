@@ -53,3 +53,124 @@
 	color: white;
 	width: 100%;
 }
+
+#content,#description {
+	clear: both;
+	position: relative;
+	width: auto;
+	min-height: 320px;
+	max-height: 520px;
+	margin: 0 14px;
+	padding-bottom: 16px;
+	white-space: nowrap;
+	overflow-x: auto;
+	overflow-y: hidden;
+	-webkit-user-select: none;
+}
+
+#description {
+	margin-top: 2em;
+}
+
+.pictures {
+	
+}
+
+.pictures img {
+	max-width: 280px;
+	margin-left: 10px;
+	margin: 0 3px;
+	border: 1px solid white;
+	-webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: #999 0 3px 5px;
+	border-color: #A2A2A2;
+}
+
+#content div.lockup-container.application,#description div.lockup-container.application {
+	clear: both;
+	margin-left: -16px;
+}
+
+#content div.application,#description div.application {
+	margin-bottom: 2em;
+	zoom: 1;
+}
+
+#content div.swoosh,#description div.swoosh {
+	margin-left: -16px;
+	background-color: #F7F7F7;
+	z-index: 0;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+	zoom: 1;
+}
+
+#content div.swoosh,#description div.swoosh {
+	padding-bottom: 16px;
+	zoom: 1;
+}
+
+#content div.title,#description div.title {
+	display: block;
+	padding: 14px 0 0 26px;
+}
+
+#content div.title > h2,#description div.title > h2 {
+	float: left;
+}
+
+#content div.title h2,#description div.title h2 {
+	color: #474747;
+	text-align: left;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 1.5em;
+	line-height: 18px;
+	margin-bottom: 18px;
+}
+
+#content div.content {
+	clear: both;
+	position: relative;
+	width: auto;
+	min-height: 320px;
+	max-height: 520px;
+	margin: 0 24px;
+	padding-bottom: 16px;
+	white-space: nowrap;
+	overflow-x: auto;
+	overflow-y: hidden;
+	-webkit-user-select: none;
+}
+
+#description div.content {
+	clear: both;
+	position: relative;
+	width: auto;
+	margin: 0 24px;
+	padding-bottom: 16px;
+}
+
+#content div.swoosh div.content {
+	zoom: 1;
+}
+
+#description .content p {
+color: #898989;
+}
+
+#content div::-webkit-scrollbar {
+	height:8px;
+}
+#content div::-webkit-scrollbar-track:horizontal {
+	-webkit-border-image:url(../i/horiz_track_well.png) 0 8 0 8;
+	border-width:0 8px;
+}
+#content div::-webkit-scrollbar-thumb:horizontal {
+	-webkit-border-image:url(../i/horiz_track_thumb.png) 0 8 0 8;
+	border-width:0 8px;
+}
